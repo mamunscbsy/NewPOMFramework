@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="testCases.TC003_EditLead">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="setDate"/>
+          <include name="login"/>
+          <include name="editLead"/>
+        </methods>
+      </class> <!-- testCases.TC003_EditLead -->
+      <class name="testCases.TC006_MergeLead">
+        <methods>
+          <include name="mergeLead" invocation-numbers="0"/>
+          <include name="closeBrowser"/>
+          <include name="setData"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testCases.TC006_MergeLead -->
+      <class name="testCases.TC005_DuplicateLead">
+        <methods>
+          <include name="setData"/>
+          <include name="closeBrowser"/>
+          <include name="login"/>
+          <include name="duplicateLeade"/>
+        </methods>
+      </class> <!-- testCases.TC005_DuplicateLead -->
+      <class name="testCases.TC004_DeleteLead">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="deleteLead"/>
+          <include name="setData"/>
+          <include name="login"/>
+        </methods>
+      </class> <!-- testCases.TC004_DeleteLead -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
